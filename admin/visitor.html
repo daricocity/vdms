@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Visitor</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1,">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta name="keywords" content=""/>
+      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); } </script>
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/mdb.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/compiled.min.css">
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id="vds-section">
+      <div id="intro_home" >
+        <nav class="navbar hidden-on-medium-and-up">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+            <!-- SideNav slide-out button -->
+            <a href="#" data-activates="slide-outbig" class="button-collapse menu-bar-icon"><i class="fa fa-bars" style="color: #fff"></i></a>
+            <!-- Sidebar navigation -->
+              <div id="slide-outbig" class="side-nav side wide sn-bg-1">
+                <ul class="custom-scrollbar">
+                    <li>
+                        <ul class="collapsible collapsible-accordion" style="margin-top: 30px;">
+                          <li >
+                                <a  href="#"><i class="fa fa-home"></i>Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-user"></i>Visitors</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-phone"></i>Employees</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-database"></i>Deliveries</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-circle"></i>Pre-Registration</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-circle"></i>Evacuation</a>
+                            </li>
+                          <li>
+                            <a class="collapsible-header waves-effect arrow-r"><i class="fa fa-circle"></i>Setting</a>
+                      <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#" class="waves-effect">Branding & Design</a></li>
+                            <li><a class="dropdown-item" href="#">Photo & ID Printing</a></li>
+                            <li><a class="dropdown-item" href="#">Visitor Agreement</a></li>
+                            <li><a class="dropdown-item" href="#">Visitor Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Notification Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Employee Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Delivery Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Devices & Locations</a></li>
+                        </ul>
+                      </div>
+                          </li>
+                          <li>
+                                <a href="#"><i class="fa fa-circle"></i>Admin Roles</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--/. Side navigation links -->
+                  </ul>
+                  <div class="sidenav-bg rgba-blue-strong"></div>
+              </div>
+              <div class="">
+                <ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle PF" id="PF" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img src="img/avatar.png">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-default" id="take" aria-labelledby="PF">
+                        <a class="dropdown-item" href="#">My Profile</a>
+                        <a class="dropdown-item" href="#">Account Setting</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-dark hidden-on-small-and-down">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo"></a>
+            <!-- SideNav slide-out button -->
+            <a href="#" data-activates="slide-outs" class="button-collapse menu-bar-icon"><i class="fa fa-bars"></i></a>
+            <!-- Sidebar navigation -->
+            <ul id="slide-outs" class="side-nav">
+              <!-- Side navigation links -->
+              <div class="slide-out-wrapper">
+                <li >
+                  <a  href="#"><i class="fa fa-home"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Visitors</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-phone"></i>Employees</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-database"></i>Deliveries</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-circle"></i>Pre-Registration</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-circle"></i>Evacuation</a>
+                </li>
+                <li class="dropdown">
+                  <a id="sub-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-circle"></i>Settings
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="sub-menu" id="drop-style">
+                    <a class="dropdown-item" href="#">Branding & Design</a>
+                    <a class="dropdown-item" href="#">Photo & ID Printing</a>
+                    <a class="dropdown-item" href="#">Visitor Agreement</a>
+                    <a class="dropdown-item" href="#">Visitor Settings</a>
+                    <a class="dropdown-item" href="#">Notification Settings</a>
+                    <a class="dropdown-item" href="#">Employee Settings</a>
+                    <a class="dropdown-item" href="#">Delivery Settings</a>
+                    <a class="dropdown-item" href="#">Devices & Locations</a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-circle"></i>Admin Roles</a>
+                </li>
+              </div>
+              <!--/. Side navigation links -->
+              <div class="sidenav-bg mask-strong"></div>
+            </ul>
+            <div class="">
+              <ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="PF" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/avatar.png">
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="PF">
+                    <a class="dropdown-item" href="#">My Profile</a>
+                    <a class="dropdown-item" href="#">Account Setting</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="main-panel">
+          <div class="sidebar" id="visitor-sidebar">
+            <div class="sidebar-wrapper" id="visitor-sidebar-wrapper">
+              <ul class="nav">
+                <li>
+                    <a  href="#"><i class="fa fa-home"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i>Visitors</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-phone"></i>Employees</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-database"></i>Deliveries</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-circle"></i>Pre-Registration</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-circle"></i>Evacuation</a>
+                </li>
+                <li class="dropdown">
+                  <a id="sub-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa fa-circle"></i>Settings
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="sub-menu" id="drop-style">
+                      <a class="dropdown-item" href="#">Branding & Design</a>
+                      <a class="dropdown-item" href="#">Photo & ID Printing</a>
+                      <a class="dropdown-item" href="#">Visitor Agreement</a>
+                      <a class="dropdown-item" href="#">Visitor Settings</a>
+                      <a class="dropdown-item" href="#">Notification Settings</a>
+                      <a class="dropdown-item" href="#">Employee Settings</a>
+                      <a class="dropdown-item" href="#">Delivery Settings</a>
+                      <a class="dropdown-item" href="#">Devices & Locations</a>
+                  </div>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-circle"></i>Admin Roles</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container" style="">
+            <div class="row justify-content-center">
+              <div class="col-md-10 offset-md-2">
+                <div class="col-md-8" id="vds-form">
+                  <div class="form-gradient">
+                    <div class="card-body">
+                      <div class="header" id="head">
+                        <div class="row justify-content-center">
+                          <h3 class="white-text mb-3 pt-3 font-bold">Visitor Form</h3>
+                        </div>
+                      </div>
+                      <div class="mx-4">
+                        <form>
+                          <input type="text" class="form-control mt-3" placeholder="First Name">
+                          <input type="text" class="form-control mb-2" placeholder=" Last Name">
+                          <input type="text" class="form-control mb-2" placeholder=" Telephone No">
+                          <input type="text" class="form-control mb-2" placeholder=" Company">
+                          <input type="text" class="form-control mb-2" placeholder=" Address">
+                          <input type="text" class="form-control mb-2" placeholder=" City">
+                          <select class="browser-default mdb-select md-form form-control">
+                          <option value="" disabled>Choose an option</option>
+                          <option value="1" selected>Your State</option>
+                          <option value="2"> Select Your State</option>
+                          <option value="3"> Abia</option>
+                          <option value="4"> Adamawa</option>
+                          <option value="5">Akwa Ibom</option>
+                          <option value="6">Anabra</option>
+                          <option value="7"> Bauchi</option>
+                          <option value="8"> Bayelsa</option>
+                          <option value="9"> Benue</option>
+                          <option value="10"> Borno</option>
+                          <option value="1"> Cross River</option>
+                          <option value="1"> Delta</option>
+                          <option value="1"> Ebonyi</option>
+                          <option value="1"> Edo</option>
+                          <option value="1"> Ekiti</option>
+                          <option value="1"> Enugu</option>
+                          <option value="1"> Gombe</option>
+                          <option value="1"> Imo</option>
+                          <option value="1"> Jigawa</option>
+                          <option value="1"> Kaduna</option>
+                          <option value="1"> Kano</option>
+                          <option value="1"> Kastina</option>
+                          <option value="1"> Kebbi</option>
+                          <option value="1"> Kogi</option>
+                          <option value="1"> Kwara</option>
+                          <option value="1"> Lagos</option>
+                          <option value="1"> Nassarawa</option>
+                          <option value="1"> Niger</option>
+                          <option value="1"> Ogun</option>
+                          <option value="1"> Ondo</option>
+                          <option value="1"> Osun</option>
+                          <option value="1"> Oyo</option>
+                          <option value="1"> Plateu</option>
+                          <option value="1"> River</option>
+                          <option value="1"> Sokoto</option>
+                          <option value="1"> Taraba</option>
+                          <option value="1"> Yobe</option>
+                          <option value="1"> Zamfara</option>
+                          </select>
+                          <select class="browser-default form-control js-select">
+                            <option value="" disabled>Choose an option</option>
+                            <option value="1" selected>Gender</option>
+                            <option value="2">Male</option>
+                            <option value="2">Female</option>
+                          </select>
+                          <button type="submit" class="btn btn-info btn-block submit font-weight-bold mb-2">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Main layout-->
+
+    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/compiled.min.js"></script>
+    <script>
+      // SideNav init
+      $(".button-collapse").sideNav();
+    </script>
+  </body>
+</html>

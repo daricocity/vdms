@@ -1,0 +1,413 @@
+/* Google Font */
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../font/quicksand-bold-webfont.eot');
+    src: url('../font/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../font/quicksand-bold-webfont.woff') format('woff'),
+         url('../font/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../font/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand_lightregular';
+    src: url('../font/quicksand-light-webfont.eot');
+    src: url('../font/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-light-webfont.woff2') format('woff2'),
+         url('../font/quicksand-light-webfont.woff') format('woff'),
+         url('../font/quicksand-light-webfont.ttf') format('truetype'),
+         url('../font/quicksand-light-webfont.svg#quicksand_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksand_mediumregular';
+    src: url('../font/quicksand-medium-webfont.eot');
+    src: url('../font/quicksand-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-medium-webfont.woff2') format('woff2'),
+         url('../font/quicksand-medium-webfont.woff') format('woff'),
+         url('../font/quicksand-medium-webfont.ttf') format('truetype'),
+         url('../font/quicksand-medium-webfont.svg#quicksand_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../font/quicksand-regular-webfont.eot');
+    src: url('../font/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../font/quicksand-regular-webfont.woff') format('woff'),
+         url('../font/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../font/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: quicksand_lightregular, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.carousel-caption{
+	margin-bottom: 80px;
+}
+.carousel-caption h1{
+	color: #fff;
+	font-size: 70px;
+	margin-bottom: 25%;
+	font-weight: 700;
+}
+
+.visitor-in a{
+	background: #ffffff;
+	padding: 10px 50px;
+	border-radius: 30px;
+	font-size: 30px;
+	margin-top: -200px;
+	font-weight: 700;
+
+}
+
+.carousel-caption img{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-top: -150px;
+	margin-left: -100px;
+}
+
+.clickable{
+	padding: 10px 0;
+}
+
+.clickable span{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #fff;
+}
+
+.clickable a{color: #fff;}
+
+.left{
+	margin-right: 200px;
+}
+
+@media(max-width: 768px){
+	.view img{
+		height: 610px;
+	}
+	.carousel-caption img{
+		margin-left: 0px;
+	}
+    .left{
+        margin-right: 20px;
+    }
+    .clickable span{
+        font-size: 1.2em;
+    }
+}
+
+.profile-img h5{
+    font-size: 2em;
+    font-weight: bold;
+}
+.profile-img tr td img{
+    height: 50px;
+    width: 50px;
+}
+.upload img{
+   height: 50px;
+   width: 50px; 
+   margin-left: 45%
+}
+.submit {
+    text-transform: capitalize;
+    margin-top: -10px; 
+}
+
+form input[type=email] {
+    height: 20px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+form input[type=email] {
+    color: #000;
+    font-size: 0.8125rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-align: start;
+    font: 400 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb!important;
+}
+
+form input[type=email]:focus:not([readonly]) {
+    color: #044d0b!important;
+    background: #fff;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+/* Listing */
+
+.form-control::placeholder{
+    padding: 5px 0px 5px 10px;
+    border-bottom: 0px solid #f9f9f9;
+    font-family: quicksand_lightregular, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+form textarea{
+    height: 200px;
+}
+
+form input[type=text]:focus:not([readonly]),
+form input[type=date]:focus:not([readonly]),
+form input[type=time]:focus:not([readonly]),
+form input[type=password]:focus:not([readonly]) {
+    color: #044d0b!important;
+    background: #f9f9f9;
+    font-weight: 700;
+    padding: 5px 0px 5px 10px;
+    border-bottom: 0px solid #f9f9f9;
+    font-size: 15px;
+    font-family: quicksand_lightregular, sans-serif;
+}
+
+input[type=date],
+input[type=time] {
+  height: 35px;
+  width: 100%;
+  font-family: quicksand_lightregular, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: lighten(#2f2f2f,40%);
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 3px;
+  color: #044d0b;
+  
+  &::-webkit-date-edit-month-field {
+    color: red;
+  }
+  &::-webkit-date-edit-day-field {
+    color: white;
+  }
+  &::-webkit-date-edit-year-field {
+    color: blue;
+  }
+  
+  &::-webkit-clear-button {
+    font-size: 18px;
+    height: 30px;
+    position: relative;
+    right: 5px;
+    margin-right: 4px;
+  }
+  &::-webkit-inner-spin-button {
+    height: 30px;
+  }
+  &::-webkit-calendar-picker-indicator {
+    font-size: 18px;
+        
+    &:hover {
+      background-color: lighten(#2f2f2f,40%);
+      color: darken(#fff, 10%);
+      cursor: pointer;
+    }
+    &:active {
+      color: blue;
+    }
+  }
+}
+
+form input[type=text],
+form input[type=date],
+form input[type=time],
+form input[type=password] {
+    background-color: #f9f9f9;
+    padding: 5px 0px 5px 10px;
+    border-bottom: 0px solid #f9f9f9;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: quicksand_lightregular, sans-serif;
+}
+
+form button[type=submit] {
+    background: #2c3b5a!important;
+    width: 100%;
+    font-size: 15px;
+    font-family: quicksand_lightregular, sans-serif;
+}
+
+form button[type=submit]:hover {
+    background: #2c3b5a!important;
+}
+
+/*===== Get Tutor =====*/
+/* Start Web Banner */
+
+@media (max-width: 768px) {
+    #intro-get {
+        height: 400px;
+    }
+}
+/* End Web Banner */
+
+.title h2 {
+    color: #566985;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.info h4 {
+    font-size: 16px;
+    color: #566985;
+    font-weight: 700;
+}
+
+.info p {
+    color: #adc7dd;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#vds-section-home{
+    height: auto;
+    min-height: 100vh;
+}
+
+.view img{
+    height: auto;
+    min-height: 92vh;
+}
+
+@media (min-width: 1300px) {
+    .view img{
+        height: 800px;
+    }
+}
+
+
+#vds-section {
+    /*background: #72b747;*/
+    background: #2c3b5a;
+    height: auto;
+    min-height: 100vh;
+    /*padding-bottom: 20px;*/
+    padding-top: 20px;
+}
+
+#vds-section-table {
+    /*background: #4db7fe;*/
+    background: #2c3b5a;
+    height: auto;
+     min-height: 100vh;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#vds-section-delivery {
+    background: #2c3b5a;
+    /*background: #72b747;*/
+    height: 100vh;
+    /*padding-bottom: 164px;*/
+    padding-top: 20px;
+}
+
+.form-gradient .font-small {
+    font-size: 0.8rem; 
+}
+
+.form-gradient .header {
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem; 
+}
+
+/*#60a43b #72b747*/
+
+/*#02b3e4 #2c3b5a*/
+
+#head {
+    /*background: linear-gradient(to right, #dce35b 0%, #45b649 100%);*/
+    background: linear-gradient(to right, #02b3e4 0%, #2c3b5a 100%);
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    margin-top: -45px;
+}
+
+#head-table {
+    background: linear-gradient(to right, #02b3e4 0%, #2c3b5a 100%);
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    margin-top: -45px;
+}
+
+.sacts{
+    height:auto;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+#vds-form{
+    margin-left:17%;
+    margin-right:30%;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 546px) and (max-width: 635px){
+    #vds-form{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
+
+@media (min-width: 457px) and (max-width: 546px){
+    #vds-form{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
+
+@media (min-width: 368px) and (max-width: 457px){
+    #vds-form{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
+
+@media (min-width: 279px) and (max-width: 368px){
+    #vds-form{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
+
+@media (max-width: 279px){
+    #vds-form{
+    margin-left:0px;
+    margin-right:0px;
+    }
+}
